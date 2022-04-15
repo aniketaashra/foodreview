@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About Us</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white">
+      <a class="navbar-brand" href="/index_page" style="font-size: 30px ; padding-top: 15px"> <img src="{{ url_for('static',filename = 'Logo.png') }}" width="60" height="50" class="d-inline-block align-top" alt="">FoodView</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Restaurants
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                  <a class="dropdown-item" href="/bestofmumbai">Best of Mumbai</a>
+                  <a class="dropdown-item" href="/corporate">Corporate Favourites</a>
+                  <a class="dropdown-item" href="/alldaycafe">All Day Cafe</a>
+                  <a class="dropdown-item" href="/streetsavy">Street Savy</a>
+                  <a class="dropdown-item" href="/oldisgold">Old is Gold</a>
+                  <a class="dropdown-item" href="/kebabs">Kebabs and Tandoor</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{username}}
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                  <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+      </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">About Us
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/index_page">Home</a>
+      </li>
+      <li class="breadcrumb-item active">About</li>
+    </ol>
+
+    <!-- Intro Content -->
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="{{ url_for('static', filename='about-bg.jpg') }}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>About FoodView</h2>
+        <p>We're a group of Foodies , running around exploring the city to find the best for you.</p>
+        <p>We provide reviews of restaurants from the foodies for the foodies!</p>
+
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <h2>Our Team</h2>
+
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="{{ url_for('static', filename='akshara.png') }}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Akshara Gadwe</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Team Member</h6>
+            <p class="card-text">Passionate about food in general .</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://in.linkedin.com/in/akshara-gadwe-312999192">akshara.gadwe@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="{{ url_for('static', filename='aniket_bote.png') }}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Aniket Bote</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Team Member</h6>
+            <p class="card-text">Swears by chicken , loves the buffet </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://in.linkedin.com/in/aniket-bote-8a59b315a">aniketbote2098@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="{{ url_for('static', filename='rahul_gurnani.png') }}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Rahul Gurnani</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Team Member</h6>
+            <p class="card-text">He is the goto guy for city's hidden food spots , a food explorer. </p>
+          </div>
+          <div class="card-footer">
+            <a href="#">gurnani.rahul@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Our Customers -->
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; FoodView 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static',filename = 'vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+
+</html>
