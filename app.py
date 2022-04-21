@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, session, jsonify, flash
-# import firebase
-from firebase import firebase
-# import pyrebase
-from pyrebase import pyrebase
+import firebase
+# from firebase import firebase
+import pyrebase
+# from pyrebase import pyrebase
 
 import hashlib
 import os
 import time
-import cv2
+
 import numpy as np
 import pandas as pd
 
@@ -130,10 +130,11 @@ def update_db(user_dict):
 ##__________________pages_____________________________
 @app.route('/')
 def home():
-    if 'username' in session:
-        return render_template('index_loggedin.html', username = session['username'])
-    else:
-        return render_template('index.html')
+    # if 'username' in session:
+    #     return render_template('index_loggedin.html', username = session['username'])
+    # else:
+    # return "Heloo World"
+    return render_template('index.html')
 
 @app.route('/index_page')
 def index_page():
