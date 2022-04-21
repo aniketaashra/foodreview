@@ -1,0 +1,4 @@
+Flask==0.11.1
+gunicorn==18.0
+# numpy
+pandas
