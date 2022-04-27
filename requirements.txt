@@ -1,4 +1,7 @@
 Flask==0.11.1
+Pyrebase
 gunicorn==18.0
-# numpy
+numpy
 pandas
+firebase
+opencv-python
