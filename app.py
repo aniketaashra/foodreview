@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, session, jsonify, flash
 import firebase
-# from firebase import firebase
+from firebase import firebase
 import pyrebase
 # from pyrebase import pyrebase
 
